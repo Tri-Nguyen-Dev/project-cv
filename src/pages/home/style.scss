@@ -1,0 +1,113 @@
+.home {
+  .img__test {
+    background: url("http://mauweb.monamedia.net/novahills/wp-content/uploads/2018/12/bg-introduct.png")
+      no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .content {
+      top: 50%;
+      position: absolute;
+      font-size: 4rem;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      padding: 0 24px;
+      max-width: 100%;
+      gap: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 0;
+
+      img {
+        max-width: 100%;
+        width: 340px;
+        border-radius: 10px;
+      }
+
+      .content-wapper {
+        display: flex;
+        background-color: #fff;
+        color: #333;
+        border-radius: 10px;
+        gap: 24px;
+        opacity: 0.95;
+      }
+
+      .content-description {
+        padding: 16px 10px 10px 12px;
+        width: 340px;
+        line-height: 1.2;
+      }
+
+      .content-list {
+        font-size: 14px;
+        padding-left: 6px;
+        color: #acabc3;
+
+        li {
+          padding: 6px 0;
+        }
+      }
+
+      .content-heading {
+        font-size: 25px;
+        color: #ff7800;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 600;
+      }
+
+      .content-action {
+        font-size: 13px;
+        margin-top: 24px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .content-btn {
+        padding: 12px 24px;
+        background-color: #ff7800;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      &.scrolled {
+        animation: slide-in-left 1s ease-in-out both;
+      }
+
+      @keyframes slide-in-left {
+        0% {
+          transform: translate(-100px, -50%);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0, -50%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/* mobile < 740px */
+
+@media only screen and (max-width: 739px) {
+  .content-wapper {
+    flex-direction: column;
+    max-height: 100%;
+  }
+
+  .content {
+    img {
+      height: 240px !important;
+    }
+  }
+}

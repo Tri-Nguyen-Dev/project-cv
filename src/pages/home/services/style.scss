@@ -1,0 +1,38 @@
+.services {
+  margin-top: 44px;
+
+  .row {
+    max-width: 100%;
+  }
+  &-img {
+    width: 65px;
+    height: 65px;
+  }
+  &-heading {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  &-title {
+    color: #151875;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  &-description {
+    text-align: center;
+    color: #1a0b5b59;
+    font-weight: 500;
+  }
+}
